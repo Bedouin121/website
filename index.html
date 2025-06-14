@@ -46,14 +46,22 @@
 
       <!-- Project 2 -->
       <a href="#" class="group block relative h-64 rounded-lg overflow-hidden project-card opacity-0 translate-y-6 transition-all duration-700 ease-out delay-100">
-        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://picsum.photos/id/1015/600/400');"></div> 
-        <div class="absolute inset-0 bg-green-600 group-hover:translate-x-0 translate-x-full transform transition-transform duration-500 flex items-center justify-center">
-          <span class="text-white text-2xl font-bold">💡</span>
+      <div 
+        class="relative w-full h-96 bg-cover bg-center group"
+        style="background-image: url('bc1.jpg');"
+      >
+        <!-- Optional: Some content like text or an emoji -->
+        <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <!-- This is where the lightbulb emoji was -->
+          <!-- It will only appear on hover if needed -->
+          💡
         </div>
-        <div class="absolute bottom-0 left-0 p-6 text-white z-10 bg-gradient-to-t from-black/70 to-transparent w-full">
-          <h3 class="text-xl font-bold">Breast cancer Detection</h3>
-          <p class="text-sm">U-net implemented breast cancer detection model</p>
-        </div>
+        
+        <!-- Background image change on hover using pseudo-element -->
+        <div 
+          class="absolute inset-0 bg-cover bg-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+          style="background-image: url('bc2.jpg');"
+        ></div>
       </div>
 
     </div>
