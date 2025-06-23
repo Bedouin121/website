@@ -13,8 +13,8 @@
     }
 
     @keyframes pulseBars {
-      0%, 100% { transform: scaleY(1); opacity: 0.7; }
-      50% { transform: scaleY(2.5); opacity: 1; }
+      0%, 100% { transform: scaleY(0.5); opacity: 0.4; } /* More shrink */
+      50% { transform: scaleY(3.5); opacity: 1; }        /* More stretch */
     }
 
     .animate-spectrogram-delay-1 {
@@ -37,7 +37,7 @@
 <body class="bg-[#08100C] text-white">
 
   <!-- Sidebar Navigation -->
-  <aside class="fixed top-0 left-0 h-full w-48 bg-[#08100C] shadow-lg flex flex-col py-6 px-4 z-20 border-r border-gray-800">
+  <aside class="fixed top-0 left-0 h-full w-68 bg-[#08100C] shadow-lg flex flex-col py-6 px-4 z-20 border-r border-gray-800">
     <nav class="flex flex-col space-y-4 text-gray-300 font-medium">
       <a href="#hero" class="hover:text-blue-400 transition">Home</a>
       <a href="#projects" class="hover:text-blue-400 transition">Projects</a>
@@ -49,18 +49,20 @@
   <!-- Spectrogram Background Animation -->
   <div id="spectrogram" class="fixed inset-0 z-0 pointer-events-none flex items-center justify-center">
     <div class="flex justify-around w-screen px-4">
-      <div class="spectrogram-bar w-2 h-16 bg-gray-500 mx-px animate-spectrogram-delay-1"></div>
-      <div class="spectrogram-bar w-2 h-24 bg-gray-500 mx-px animate-spectrogram-delay-2"></div>
-      <div class="spectrogram-bar w-2 h-32 bg-gray-500 mx-px animate-spectrogram-delay-3"></div>
-      <div class="spectrogram-bar w-2 h-20 bg-gray-500 mx-px animate-spectrogram-delay-4"></div>
-      <div class="spectrogram-bar w-2 h-28 bg-gray-500 mx-px animate-spectrogram-delay-5"></div>
-      <div class="spectrogram-bar w-2 h-16 bg-gray-500 mx-px animate-spectrogram-delay-1"></div>
-      <div class="spectrogram-bar w-2 h-24 bg-gray-500 mx-px animate-spectrogram-delay-2"></div>
-      <div class="spectrogram-bar w-2 h-32 bg-gray-500 mx-px animate-spectrogram-delay-3"></div>
-      <div class="spectrogram-bar w-2 h-20 bg-gray-500 mx-px animate-spectrogram-delay-4"></div>
-      <div class="spectrogram-bar w-2 h-28 bg-gray-500 mx-px animate-spectrogram-delay-5"></div>
+      <div class="spectrogram-bar w-6 h-16 bg-gray-500/10 mx-px rounded-t rounded-b animate-spectrogram-delay-1"></div>
+      <div class="spectrogram-bar w-6 h-16 bg-gray-500/10 mx-px rounded-t rounded-b animate-spectrogram-delay-1"></div>
+      <div class="spectrogram-bar w-6 h-16 bg-gray-500/10 mx-px rounded-t rounded-b animate-spectrogram-delay-1"></div>
+      <div class="spectrogram-bar w-6 h-24 bg-gray-500/10 mx-px rounded-t rounded-b animate-spectrogram-delay-2"></div>
+      <div class="spectrogram-bar w-6 h-32 bg-gray-500/10 mx-px rounded-t rounded-b animate-spectrogram-delay-3"></div>
+      <div class="spectrogram-bar w-6 h-20 bg-gray-500/10 mx-px rounded-t rounded-b animate-spectrogram-delay-4"></div>
+      <div class="spectrogram-bar w-6 h-28 bg-gray-500/10 mx-px rounded-t rounded-b animate-spectrogram-delay-5"></div>
+      <div class="spectrogram-bar w-6 h-16 bg-gray-500/10 mx-px rounded-t rounded-b animate-spectrogram-delay-1"></div>
+      <div class="spectrogram-bar w-6 h-24 bg-gray-500/10 mx-px rounded-t rounded-b animate-spectrogram-delay-2"></div>
+      <div class="spectrogram-bar w-6 h-32 bg-gray-500/10 mx-px rounded-t rounded-b animate-spectrogram-delay-3"></div>
+      <div class="spectrogram-bar w-6 h-20 bg-gray-500/10 mx-px rounded-t rounded-b animate-spectrogram-delay-4"></div>
+      <div class="spectrogram-bar w-6 h-28 bg-gray-500/10 mx-px rounded-t rounded-b animate-spectrogram-delay-5"></div>
     </div>
-  </div>
+</div>
 
   <!-- Main Content Wrapper -->
   <div class="md:ml-48 relative z-10">
@@ -70,12 +72,12 @@
       <img 
         src="tj.jpg"
         alt="Hasib Turjo" 
-        class="w-48 h-48 rounded-full object-cover mb-4 border-4 border-blue-200 shadow-lg"
+        class="w-68 h-48 rounded-full object-cover mb-4 border-4 border-blue-200 shadow-lg"
         onerror="this.src='https://via.placeholder.com/150';"       
       />
       <h1 class="text-4xl md:text-5xl font-bold mb-3 text-white">Hasib Turjo</h1>
       <p class="text-lg md:text-xl max-w-xl text-gray-300">
-        Web developer, designer, and creator of cool stuff.
+        God, they're gonna make me get a job aren't they ?
       </p>
     </section>
 
@@ -98,6 +100,15 @@
           <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/>
         </svg>
       </a>
+
+      <!-- 🔥 LeetCode Icon Added Here -->
+      <div class="transform -translate-x-1 -translate-y-1">
+        <a href="https://leetcode.com/u/turjo121/"   target="_blank" rel="noopener noreferrer" class="inline-block text-gray-400 hover:text-yellow-500 transition-colors duration-300">
+          <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M16.785 19.743c-.014.178-.07.349-.16.497a1.001 1.001 0 0 1-1.726-.708l.093-.114 1.693-2.115h-5.386l-1.788 2.233c-.09.113-.202.208-.329.279a1.002 1.002 0 0 1-1.01-.061 1.001 1.001 0 0 1-.414-1.203l.09-.17 2.745-5.032a1.5 1.5 0 0 0 .034-1.534L7.15 6.01a1.001 1.001 0 1 1 1.77-1.062l2.764 4.607a1.5 1.5 0 0 0 2.592.01l4.165-6.467a1.001 1.001 0 1 1 1.705.666l-4.57 9.278 1.787-2.233a1.001 1.001 0 1 1 1.618 1.212l-2.58 3.224 1.693 2.115c.09.114.146.254.16.406z"/>
+          </svg>
+        </a>
+      </div>
     </section>
 
     <!-- Projects Section -->
